@@ -40,7 +40,7 @@ def gen_add():
 
 
 	FINAL_BTC_ADDRESS = base58.b58encode(bin_addr)
-	print ("this is my bitcoin address: " + FINAL_BTC_ADDRESS)
+	print ("this is my bitcoin address: {}".format(FINAL_BTC_ADDRESS))
 
 	return(FINAL_BTC_ADDRESS, signing_key.to_string().hex())
 
